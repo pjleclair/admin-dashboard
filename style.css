@@ -2,3 +2,81 @@
     margin: 0;
     padding: 0;
 }
+
+.sidebar {
+    width: 200px;
+    border: 1px solid;
+}
+
+.container {
+    display: grid;
+    grid-template: 1fr / 200px 1fr;
+}
+
+.main-content {
+    display: grid;
+    grid-template: 8rem 1fr / 2fr 1fr;
+}
+
+.header {
+    display: grid;
+    grid-template: 1fr 1fr;
+    grid-area: 1 / 1 / 2 / 4;
+    border: 1px solid;
+}
+
+.header-top {
+    justify-self: center;
+    align-self: center;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.pfp-big {
+    margin: 10px;
+}
+
+.project-container {
+    display: grid;
+    grid-template: 50px 1fr;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+.projects {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 50% 50%;
+    margin: 4px;
+    gap: 4px;
+}
+
+.proj {
+    margin: 10px;
+    padding: 20px;
+}
+
+.anntrend {
+    display: grid;
+    grid-template: 1fr 1fr;
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.announcements {
+    display: grid;
+    grid-template: repeat(3, 1fr);
+    margin: 5px;
+    padding: 5px;
+}
+
+.trending {
+    display: grid;
+    grid-template: repeat(4, 1fr);
+    margin: 5px;
+    padding: 5px;
+}
